@@ -1,1 +1,1 @@
-This repo is a collection of all  projects made during Web-developement Journey
+This repo is a collection of all  projects made during Web-development Journey
