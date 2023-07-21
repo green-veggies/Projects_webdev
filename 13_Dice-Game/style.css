@@ -1,0 +1,35 @@
+body{
+    background-color:rgb(21, 33, 34);
+}
+
+.container{
+    text-align:center;
+    width:60%;
+    margin:auto;
+}
+.player{
+    text-align: center;
+    display:inline-block;
+}
+h1{
+    margin:30px;
+    font-size: 8rem;
+    font-family: 'Lobster', cursive;
+    text-shadow: 5px 0 rgb(0, 67, 79);
+    color:cadetblue;
+}
+p{
+    font-size: 2rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:cadetblue
+}
+img{
+    width: 60%;
+}
+footer{
+    margin-top:10%;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
