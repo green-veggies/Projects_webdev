@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta user-scalable="no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Aditya Jasrotia</title>
+</head>
+<body>
+    <div class="cursor" id="curse"></div>
+    <div class="hero">
+        <!--NavBar-->
+        <nav>
+            <img src="./Assets/images/namesig.png" alt="sign" height="80px">              
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>        
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Home-->
+        <div class="home">
+            <div>
+            <p class="intro" >Hi, This is<span class="name"><br> Aditya Jasrotia</span></p> 
+                        <!--enthusiasm-->
+            <ul>
+            <li><p>Currently gaining knowledge of Javascript</p></li>
+            <li><p>Aspiring Full Stack Web Developer</p></li>
+            <li><p>Cyber Security Enthusiast</p></li>
+            </ul>
+            <a href="https://www.linkedin.com/in/adityajasrotia/" target="_blank"><img src="./Assets/images/icons8-linkedin.svg" alt="linkedin"></a>
+            <a href="https://www.github.com/green-veggies" target="_blank"><img src="./Assets/images/icons8-github.gif" alt="github"></a>
+            <a href="mailto:b322070@iiit-bh.ac.in" target="_blank"><img src="./Assets/images/icons8-gmail.svg" alt="gmail"></a>
+            </div>
+            <div class="profile"><img src="./Assets/images/1684470459269.jpg" alt="profile"></div>
+
+        </div>
+    </div>
+    
+
+    <!--About Me-->
+    <div class="abt" id="about">
+    <div class="about">
+        <div class="standup">
+            <img src="./Assets/images/speaker.jpg" alt="aditya">
+        </div>
+        <div class="aboutme"><h2>About Me</h2>
+            <article>Hello, I am Aditya Jasrotia 1st year student at IIIT Bhubaneswar
+                pursuing Bachelor of Technology in Electrical and Electronics Engineering.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias maxime,
+                amet ad aspernatur, facilis laudantium quos reprehenderit iusto 
+                voluptatibus voluptatum perferendis corrupti sapiente nobis dolore
+                s ducimus nesciunt corporis? Dolorem temporib
+                us aliquid earum vitae. Omnis
+                    error eveniet nisi porro sunt sit id vo
+                    luptatem iure. Aspernatur nostrum distinctio recusandae tenetur v
+                    oluptatum alias?</article>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Education
+    <div class="edu"><h2>Education</h2>
+        <ul>
+            <li>B.Tech EEE at IIIT Bhubaneswar (2022-26)</li>
+            <li>12th and 10th from Kendriya Vidyalaya Hiranagar</li>
+        </ul>
+
+    </div> -->
+    <!--Skills-->
+    <div class="sk" id="skill">
+        <h2 class="skil">Skills</h2>
+        <div class="skills">
+            
+                <div><img src="./Assets/images/python-5.svg" alt="python" ></div>
+                <div><img src="./Assets/images/c-1.svg" alt="c" ></div>
+                <div><img src="./Assets/images/html-1.svg" alt="html"></div>
+                <div><img src="./Assets/images/css-3.svg" alt="css"></div>
+                <div><img src="./Assets/images/bootstrap-5-1.svg" alt="Bootstrap"> </div>
+                <div><img src="./Assets/images/tailwindcss.svg" alt="tailwind" ></div>
+                <div><img src="./Assets/images/mysql-6.svg" alt="mysql"></div>
+                <div><img src="./Assets/images/git-icon.svg" alt="git"></div>
+                <div><img src="./Assets/images/github-icon.svg" alt="github"></div>
+                <div><img src="./Assets/images/visual-studio-code-1.svg" alt="vscode"></div>
+            
+        </div>
+    </div>
+    <!--Projects-->
+    <div class="proj" id="projects">
+    <h2>Projects</h2>
+        <div class="projects">
+            <div class="section">
+                <img src="./Assets/images/tindog.png" alt="tindog" height="180px">
+                <p>This is a Tinder for dog website project inspired by Dr. Angela Yu's project and made using HTML,CSS and Bootstrap</p>
+                <button class="button"><a href="./Assets/projects/12_TinDog/index.html" target="_blank">Click Here</a>
+            </div>
+            <div class="section">
+                <img src="./Assets/images/moveit.png" alt="moveit" height="150px">     
+                <p>This project is created using HTML, CSS and Bootstrap</p>
+                <button class="button"><a href="./Assets/projects/11_MoveIt Project/index.html" target="_blank">Click Here</a>
+            </div>
+            <div class="section">
+                <img src="./Assets/images/resume.png" alt="HTML"height="200px">              
+                <p>This project is created using pure HTML and it was an attemp to create a RESUME using HTML</p>
+                <button class="button"><a href="./Assets/projects/04_Resume_HTML/index.html" target="_blank">Click Here</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        let mouseCursor=document.querySelector('.cursor')
+       
+        let cursor=(event)=>{
+           // console.log(event)
+           mouseCursor.style.top=event.pageY + 'px'
+           mouseCursor.style.left=event.pageX + 'px'
+       }
+       window.addEventListener('mousemove',cursor)
+       
+       let navlinks=document.querySelectorAll('.nav-item');
+       
+       navlinks.forEach(link=>{
+           link.addEventListener('mouseleave',()=>{
+               mouseCursor.classList.remove('link-grow');
+               link.classList.remove('hovered-link');
+           })
+       
+           link.addEventListener('mouseover',()=>{
+               mouseCursor.classList.add('link-grow');
+               link.classList.add('hovered-link');
+               
+           })
+       })
+       
+       </script>
+</body>
+<div class="footer">
+<footer>
+    <span>
+    Created by <a href="https://www.linkedin.com/in/adityajasrotia/"target="_blank">Aditya Jasrotia</a> | ©2023 All rights reserved.</span>
+</footer>
+</div>
+</html>
